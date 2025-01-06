@@ -1,13 +1,13 @@
 "use strict";
-const prople = {
+function sumofAge(user1, user2) {
+    return (user1.age + user2.age);
+}
+;
+const result = sumofAge({
     name: "aditya",
-    age: 21,
-    greet: () => {
-        return "hi";
-    },
-    greet2: () => {
-        return "hello";
-    }
-};
-console.log(prople.greet());
-console.log(prople.greet2());
+    age: 21
+}, {
+    name: "harkirat",
+    age: 32
+});
+console.log(result);

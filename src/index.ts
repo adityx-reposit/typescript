@@ -1,20 +1,12 @@
-interface People{
-    name:string
+interface User{
+    id:string,
+    name:string,
     age:number,
-    greet: ()=> string,
-    greet2:()=>string
+    email:string,
+    password:string
 }
-
-const prople:People={
-   name:"aditya",
-   age:21,
-    greet:()=>{
-        return "hi"
-    },
-    greet2:()=>{
-        return "hello"
-    }
+type UpdateProps= Pick<User,'name'| 'age'|'email'>
+type UpdatePropsOption = Partial<UpdateProps>
+function updateUser(updatedProps:UpdateProps){
+       
 }
-
-console.log(prople.greet())
-console.log(prople.greet2())
