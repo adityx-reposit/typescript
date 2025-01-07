@@ -1,9 +1,7 @@
 1. Pick-- to pick particular variable from the interface ✅
-
-2 Partial-- Create all properties as optional
-3
-4
-5
-6
+2 Partial-- Create all properties as optional✅
+3 readonly-- allows objects and array to be constant and unchangeable✅
+4. record-- provides a type for an object with string keys and a specific value type ✅
+5  mao -- this defines the objects in a cleaner sense with get and set features
+6  exclude-- allows excluding function in  a program
 7
-8
