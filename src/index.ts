@@ -1,46 +1,45 @@
-// interface User{
-//     id:string,
-//     name:string,
-//     age:number,
-//     email:string,
-//     password:string
-// }only
-// type User={
-//      name:string,
-//      age:number,
-//      country:string
-// }
-// const obj: Readonly<User>={
-//     name:"aditya",
-//     age:21,
-//     country:"india"
-// }
 
-   
-// type UpdateProps= Pick<User,'name'| 'age'|'email'>
-// type UpdatePropsOption = Partial<UpdateProps>
-// function updateUser(updatedProps:UpdatePropsOption){
+interface User{
+    name:string,
+    age:number,
+    address?:{
+        city:string,
+        state:string,
+        country:string,
+        
+    }
+}
+
+
+let user:User ={
+    name:"aditya",
+    age:21,
+    address:{
+        city:"howrah",
+        state:"wb",
+        country:"india"
+    }
+}
+let user2:User={
+    name:"aditya",
+    age:10,
+
+}
+
+function isLegal(user2:User):boolean{
+    return (user2.age>=18? true:false)
        
-// }
 
-const users=new Map<string,{name:string,age:number,country:string}>()
-    users.set("admin1",{name:"aditya", age:32,country:"india"})
-    users.set("admin2",{name:"aditya", age:21,country:"india"})
-
-console.log(users.get("admin1"));
+}
 
 
+const response =isLegal(user2)
 
-// const user:Users={
-//     "ras@qd1":{
-//         name:"aditya",
-//         age:32,
-//         country:"india"
-//     },
-//     "ras@qd2":{
-//         name:"aditya",
-//         age:21,
-//         country:"india"
-//     }
-// }
-
+if(response){
+    console.log("you are legal");
+    
+}
+else{
+    console.log("you are illegal");
+    
+}
