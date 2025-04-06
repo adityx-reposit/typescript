@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsc -b & node D:/kirat_web-dev/Typescript/dist/index.js "
+    "dev": "npx tsc -b & node D:/kirat_web-dev/Typescript/dist/assignment.js "
   },
   "keywords": [],
   "author": "",

@@ -31,19 +31,59 @@ interface Client{
 
 //class component here 
 
-
-class Manager implements Client{
-    name:string;
-    age:number;  
+// class Manager implements Client{
+  
     
-    constructor(name:string , age:number){
-        this.name=name;
-        this.age=age;
-
-        console.log(`hello ${name} welcome to the age group of ${age}`);
+//     constructor(public name:string , public age:number){
+//         this.name=name;
+//         this.age=age;
         
-    }
-}
+//         console.log(`hello ${name} welcome to the age group of ${age}`);
+            
+//     }
+// }
+// class God extends Manager{
+//     constructor(name:string, age:number){
+//        super(name,age)
+       
+       
+//    }
+// }
    
-let assist=new Manager("aditya",21)
+// let assist=new Manager("aditya",21)
 
+
+//array starts here 
+
+
+function getmax(num:number[]){
+    let maxValue=0;
+        for(let i=0;i<num.length;i++){
+          if(num[i]>maxValue){
+            maxValue=num[i]
+          }
+        }
+        return console.log(maxValue);
+         
+
+    }
+    getmax([1,2,34,6,7])
+
+
+
+    interface User{
+        name:string[];
+        age:number[];
+      
+    }
+
+
+    let voted:User{
+       
+    }
+        
+    
+
+
+
+   
