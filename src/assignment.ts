@@ -72,16 +72,40 @@ function getmax(num:number[]){
 
 
     interface User{
-        name:string[];
-        age:number[];
+        name:string;
+        age:number;
       
     }
 
 
-    let voted:User{
-       
-    }
-        
+    function filter(user:User[]){
+        let ans=[];
+            for(let i=0;i<user.length;i++){
+                if(user[i].age >18){
+                   ans.push (user[i])
+                }
+            }
+            return ans
+            
+
+        }
+       let res= filter([{
+            name:"aditya",
+            age:21
+        },
+        {
+        name:"adityaaa",
+        age:22
+        },
+        {
+            name:"uyuyuy",
+            age:10
+        }
+])
+
+
+console.log(res);
+
     
 
 

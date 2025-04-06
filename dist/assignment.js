@@ -38,3 +38,26 @@ function getmax(num) {
     return console.log(maxValue);
 }
 getmax([1, 2, 34, 6, 7]);
+function filter(user) {
+    let ans = [];
+    for (let i = 0; i < user.length; i++) {
+        if (user[i].age > 18) {
+            ans.push(user[i]);
+        }
+    }
+    return ans;
+}
+let res = filter([{
+        name: "aditya",
+        age: 21
+    },
+    {
+        name: "adityaaa",
+        age: 22
+    },
+    {
+        name: "uyuyuy",
+        age: 10
+    }
+]);
+console.log(res);
